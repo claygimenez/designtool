@@ -19,6 +19,7 @@ gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'unicorn'
+gem 'clearance'
 
 group :development do
   gem 'foreman'
