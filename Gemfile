@@ -21,6 +21,11 @@ gem 'uglifier'
 gem 'unicorn'
 gem 'clearance'
 gem 'turbolinks'
+gem 'underscore-rails'
+gem 'js-routes'
+gem 'ejs'
+gem 'backbone-support'
+gem 'active_model_serializers'
 
 group :development do
   gem 'foreman'

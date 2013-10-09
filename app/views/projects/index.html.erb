@@ -1,5 +1,9 @@
 Projects!
 
-<%= @projects.each do |project| %>
-  <%= project.title %>
+<section class='projects'>
+<% content_for :javascript do %>
+  <script type="text/json" id="bootstrap">
+    { "projects": <%== ActiveModel::ArraySerializer.new(@projects).to_json %> }
+  </script>
 <% end %>
+</section>
