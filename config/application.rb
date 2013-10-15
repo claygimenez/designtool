@@ -14,6 +14,7 @@ Bundler.require(:default, Rails.env)
 module Designtool
   class Application < Rails::Application
     config.active_record.default_timezone = :utc
+    config.assets.initialize_on_precompile = false
 
   config.generators do |generate|
     generate.helper false
