@@ -2,8 +2,13 @@ FactoryGirl.define do
   sequence(:user_email) { |n| "name#{n}@example.com" }
 
   factory :project do
-    title 'Yuppy design project'
+    title 'Super awesome design project'
     user
+  end
+
+  factory :note do
+    text 'User seems to need our help! Summon the Batman'
+    project
   end
 
   factory :user do
