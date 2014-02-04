@@ -16,6 +16,7 @@
 //= require underscore
 //= require backbone
 //= require backbone-support
+//= require form_attributes
 //= require base
 //= require_tree ../templates
 //= require_tree ./utils

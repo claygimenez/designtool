@@ -1,6 +1,7 @@
 class @Designtool.Routers.ProjectsRouter extends Backbone.Router
   routes:
     ''                        : 'indexProjects'
+    ':new'                    : 'newProject'
     ':project_id'             : 'showProject'
     ':project_id/notes/:id'   : 'showNote'
 
@@ -12,6 +13,11 @@ class @Designtool.Routers.ProjectsRouter extends Backbone.Router
   indexProjects: =>
     projects = new Designtool.Views.ProjectsShow({ collection: @projectsCollection, el: $('.projects') })
     projects.render()
+
+  newProject: =>
+    projectModel = new Designtool.Models.Project(user_id: 1)
+    project = new Designtool.Views.ProjectNew({ model: projectModel, el: $('.projects') })
+    project.render()
 
   showProject: (project_id) =>
     @projectModel = @projectsCollection.find (project) -> project.get('dom_id') == 'project_' + project_id
