@@ -7,6 +7,7 @@ class Designtool.Views.ProjectNew extends Backbone.View
     @
 
   submit: ->
-    attributes = new FormAttributes(@$('form')).attributes()
-    self = @
-    project = new Designtool.Models.Project(attributes).save()
+    value = $('#project_title').val()
+    new Designtool.Models.Project({ title: value }).save {},
+      success: ->
+        window.location.href = "/projects"

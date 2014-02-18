@@ -15,8 +15,7 @@ class @Designtool.Routers.ProjectsRouter extends Backbone.Router
     projects.render()
 
   newProject: =>
-    projectModel = new Designtool.Models.Project(user_id: 1)
-    project = new Designtool.Views.ProjectNew({ model: projectModel, el: $('.projects') })
+    project = new Designtool.Views.ProjectNew({ el: $('.projects') })
     project.render()
 
   showProject: (project_id) =>
