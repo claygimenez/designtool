@@ -1,7 +1,5 @@
 class @Designtool.Models.Note extends Backbone.Model
-
-  id: ->
-    @get('id')
+  urlRoot: '/notes'
 
   text: ->
     @get('text')

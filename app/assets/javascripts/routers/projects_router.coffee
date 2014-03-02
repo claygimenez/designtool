@@ -1,24 +1,25 @@
 class @Designtool.Routers.ProjectsRouter extends Backbone.Router
   routes:
-    ''                        : 'indexProjects'
-    ':new'                    : 'newProject'
-    ':project_id'             : 'showProject'
-    ':project_id/notes/:id'   : 'showNote'
+    'projects'                         : 'indexProjects'
+    'projects/new'                     : 'newProject'
+    'projects/:project_id'             : 'showProject'
+    'projects/:project_id/notes/:id'   : 'showNote'
 
   initialize: ->
     projectsData = Designtool.bootstrap('projects')
     @projectsCollection = new Designtool.Collections.Projects(projectsData)
-    Backbone.history.start(root: '/projects', pushState: true)
+    Backbone.history.start(root: '/', pushState: true)
 
   indexProjects: =>
-    projects = new Designtool.Views.ProjectsShow({ collection: @projectsCollection, el: $('.projects') })
-    projects.render()
+    new Designtool.Views.ProjectsShow({ collection: @projectsCollection, el: $('.projects') }).render()
 
   newProject: =>
+    console.log 'new'
     project = new Designtool.Views.ProjectNew({ el: $('.projects') })
     project.render()
 
   showProject: (project_id) =>
+    console.log 'show'
     @projectModel = @projectsCollection.find (project) -> project.get('dom_id') == 'project_' + project_id
     project = new Designtool.Views.ProjectDetail({ model: @projectModel, el: $('.projects') })
     project.render()

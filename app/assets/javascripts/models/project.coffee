@@ -7,5 +7,8 @@ class @Designtool.Models.Project extends Backbone.Model
   notes: ->
     @get('notes')
 
+  projectId: ->
+    @get('id')
+
   domId: ->
     @get('dom_id')

@@ -1,5 +1,4 @@
 class ProjectsController < ApplicationController
-  # include ActionView::RecordIdentifier
   respond_to :html, :json
 
   def create
