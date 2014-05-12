@@ -1,0 +1,1416 @@
+body,html,#content {
+  height: 100%;
+}
+
+body.has-sticky {
+  padding-top: 110px;
+}
+
+#fb-comments-container .container-fluid-inner {
+  margin-top: 40px;
+  border-top: 1px solid #ccc;
+  padding: 40px 0;
+}
+#fb-comments-container .fb-comment-disclaimer {
+  font-size: 16px;
+  line-height: 27px;
+  float: right;
+  margin-bottom: 20px;
+}
+#fb-comments { max-width: 680px; }
+
+.chart-source {
+  color: #aaa;
+  font-size: 13px;
+  line-height: 1em;
+  margin-bottom: 0;
+  font-family: 'arial', sans-serif;
+}
+
+.ie_friends {
+  display: none;
+}
+
+.social-wrapper small { font-size: 13px; }
+
+.nav-project-title {
+  float: left;
+  font-size: 20px;
+  line-height: 40px;
+  color: #ccc;
+  text-transform: uppercase;
+  font-family: 'georgia', serif;
+}
+
+.nav-project-title:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* firefox drop cap bug */
+@-moz-document url-prefix() {
+  .lead.drop-cap:first-letter {
+      padding-top: 12px;
+  }
+  .drop-cap:first-letter {
+      padding-top: 8px;
+  }
+}
+
+.chapter-media figcaption { padding-top: 5px; }
+
+/* ads */
+div#ad-container{
+  text-align: center;
+}
+
+div#ad-container .advert {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.advert-wrapper {
+  max-height: 280px;
+  overflow: hidden;
+}
+
+/* Styles for bond-debt */
+
+.media-link { text-transform: uppercase; font-family: 'arial', sans-serif; font-size: 14px; }
+article p.media-link { font-size: 18px; margin-bottom: 8px; }
+article aside a.media-link { font-size: 14px; }
+article aside p { margin-bottom: 8px; }
+article a.media-link { font-size: 14px; margin-top: 7px;}
+
+.trib-media aside { margin-bottom: 15px; }
+
+.video-wrapper { margin-bottom: 5px; }
+.video-wrapper.large-video { padding-bottom: 53.2%; }
+
+div#content #intro {
+  margin-bottom: 30px;
+}
+
+div#credits {
+  padding-left: 30px;
+  max-width: 251px;
+}
+
+div#content .container-fluid {
+  max-width: 100%;
+  background: #fbfcfc;
+  z-index: 0;
+  position: relative;
+}
+
+div#content .container-fluid .container-fluid-inner {
+  width: 100%;
+  max-width: 1088px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+div#content .container-fluid .container-fluid-inner h2.dek {
+  margin:0 0 18px;
+}
+
+div#content #story-container,
+div#content #intro-container {
+  padding-top: 25px;
+}
+.backdrop {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  box-shadow:inset 0px 0px 115px rgba(0,0,0,.5);
+  -webkit-box-shadow:inset 0px 0px 115px rgba(0,0,0,.5);
+  -moz-box-shadow:inset 0px 0px 115px rgba(0,0,0,.5);
+  z-index: 0;
+}
+.backdrop .title-wrapper {
+  max-width: 1095px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.backdrop .imgLiquid {
+  background-attachment: fixed;
+}
+.backdrop.mobile .imgLiquid {
+  background-attachment: scroll;
+}
+.backdrop h1,
+.backdrop h2 {
+  text-shadow: 0 1px 2px #000;
+  text-rendering: geometricPrecision;
+  color: #f1f1f1;
+  padding: 40px 0;
+}
+.backdrop .title-wrapper > div {
+  position: fixed;
+  bottom: 0;
+}
+#chicago-bonds.backdrop h1,
+#chicago-bonds.backdrop h2 {
+  text-shadow: 0 4px 5px #000;
+}
+
+#chicago-bonds div.title-wrapper div {
+  background-color: rgba(0,0,0,.6);
+  padding: 10px;
+}
+
+#projects-bonds.backdrop h1 { font-size: 77px; }
+#cps-bonds.backdrop h1 { font-size: 73px;}
+
+.backdrop.mobile .title-wrapper > div {
+  position: absolute;
+}
+.backdrop h1 {
+  text-transform: uppercase;
+  font-size: 85px;
+  line-height: 1.2em;
+  margin: 0;
+  padding: 0;
+}
+.backdrop h2 {
+  max-width: 1080px;
+  font-size: 26px;
+  line-height: 1.3em;
+  margin: 0 0 3% 0;
+  padding: 0;
+}
+.backdrop .imgLiquid img {
+  display: none;
+}
+
+/*navbar styles*/
+.navbar .brand .ct-logo {
+  display: inline-block;
+  height: 24px;
+  margin: -4px 0 -4px 0;
+}
+
+body.has-nav {
+  padding-top: 30px;
+}
+
+body.has-nav section {
+  padding-top: 71px;
+  margin-top: -71px;
+}
+
+#social-menu {
+  height: 40px;
+  float: right;
+}
+#social-menu li i {
+  width: auto;
+  position: relative;
+  top: 8px;
+}
+#social-menu li a {
+  font-size: 26px;
+  padding: 5px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.5);
+}
+#social-menu li a:hover { color: #fff; }
+
+@media (max-width: 1000px) {
+  #social-menu { float: left; }
+}
+
+/* byline, credit, pub date */
+.ct-byline-heading {
+  text-transform: uppercase;
+  margin: 30px 0 5px;
+}
+
+.ct-byline-heading:first-child { margin-top: 0; }
+.ct-byline-source { margin-bottom: 10px; }
+
+/* social media styles */
+.social-wrapper ul {
+  margin: 15px 0 0;
+}
+
+.instructions {
+  color: #777;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+a.update-box:hover { text-decoration: none; }
+
+h3.folo-link {
+  max-width: 680px;
+  margin: 25px auto 0;
+  padding: 15px 0;
+  font-family: Georgia,Times,serif;
+  font-weight: normal;
+  color: #333;
+}
+
+h3.folo-link > span, h3.folo-link > small  {
+  font-weight: bold;
+  display:block;
+  font-family: 'arial', sans-serif;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+h3.folo-link > span { 
+  font-size: 14px; 
+  line-height: 1em;
+  color: #144A7C;
+}
+
+h3.folo-link.alert-info { 
+  background-color: inherit; 
+  margin-bottom: 35px;
+}
+
+h3.folo-link.alert-info:hover { text-decoration: none; background-color: #c7d9e9; }
+
+
+/* sticky nav styles */
+div#content #sticky-nav-container {
+  z-index: 999;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  max-width: none;
+}
+
+#sticky-nav .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#sticky-nav {
+  background-color: #fbfcfc;
+  width: 100%;
+  position: relative;
+  z-index: 100;
+}
+
+#sticky-nav.stuck {
+  position: fixed;
+  left: 0;
+  top: 40px;
+}
+
+#sticky-nav.stuck img {
+  display: none;
+}
+
+#sticky-nav {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+#sticky-nav .nav { margin-bottom: 0; }
+
+#sticky-nav-container ul li{
+  border-left: 1px solid #ccc;
+  padding: 15px; /* NOTE: use 'px' for this so that waypoints don't break! */
+  margin-right: -4px;
+  display: inline-block;
+  max-width: 370px;
+  width: 22.5%;
+  vertical-align: top;
+}
+
+#sticky-nav-container ul li a img{
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+#sticky-nav-container ul > li:hover {
+  background-color: #eee;
+}
+
+#sticky-nav-container ul > li:first-child { border-left: 0; }
+
+#sticky-nav-container ul > li > a {
+  display: block;
+}
+
+#sticky-nav-container ul > li h4 {
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 250px;
+  text-align: center;
+}
+
+#sticky-nav-container ul li > a.active h4 {
+  color: #C11B17;
+}
+
+.sticky-wrapper {
+  margin-bottom: 40px;
+}
+
+@media all and (max-width: 1240px) {
+  #sticky-nav ul li {
+    padding: 15px;
+    width: 22.1%;
+  }
+}
+@media (max-width:1000px) {
+  #sticky-nav.stuck {
+    top: 0;
+  }
+}
+@media all and (max-width: 1015px) {
+  #sticky-nav ul > li h4 { font-size: 17px; }
+}
+
+@media all and (max-width: 1014px) {
+  #sticky-nav ul li {
+    padding: 15px;
+    width: 20%;
+  }
+}
+@media all and (max-width: 950px) {
+  #sticky-nav ul > li h4 { font-size: 14px; }
+  #sticky-nav-container ul li a img { margin-bottom: 10px; }
+}
+@media all and (max-width: 868px) {
+  #sticky-nav ul > li h4 { font-size: 13px; }
+}
+@media all and (max-width: 768px) {
+
+}
+@media all and (max-width: 636px) {
+  #sticky-nav ul li { padding: 12px; }
+}
+
+/*section styles*/
+.section-head { line-height: 1.1em; }
+#sidebar-content { margin-top: 40px; }
+#sections section .span4.advert-wrapper {
+  text-align: center;
+}
+#sections section .span4.advert-wrapper .advert {
+  display: inline-block;
+  margin: 0 auto;
+}
+.about-content { padding-top: 60px; }
+
+section h1 { margin: 10px 0 20px 0; }
+.chapter-media { margin-bottom: 20px; }
+article p.lead.drop-cap + p { margin-bottom: 22px; }
+figure.related-feature { padding: 0; }
+.related-hed { margin-top: 0; }
+article p.link-below { margin-bottom: 18px;}
+.ct-time-stamp { margin-bottom: 20px; }
+P.ct-byline-source + .ct-time-stamp { margin-bottom: 10px; }
+
+#modern-schools h1 + img + figcaption,
+#modern-schools h1 + img + figcaption + figcaption { max-width: 900px; }
+
+/*graphics styles*/
+.grfx-block { margin-bottom: 30px; }
+.grfx-hed-chatter { padding-right: 20px; }
+.grfx-hed-chatter h3 { line-height: 1.2em; }
+.grfx-block article h2 { max-width: 100%; margin-bottom: 12px; line-height: 1.3em; }
+
+/* chart styles */
+
+svg { display: block; }
+
+.grfx-label { 
+  font-family: 'arial', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.3em;
+  margin-bottom: 10px;
+}
+
+.grfx-label span { font-weight: normal; }
+.grfx-label span.grfx-sublabel {
+  display: block;
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 2px;
+}
+
+.ct-article #grfx.trib-media p { width: inherit; } 
+
+span.copy-label:hover {
+  cursor: default;
+}
+span.copy-label {
+  padding: 3px 6px;
+  font-family: 'Arial', sans-serif;
+  font-size: .8em;
+  font-weight: bold;
+  color: #333;
+}
+
+span.copy-label.blue, 
+#tooltip p.value span.principal-ds, 
+#tooltip p.value span.taxable,
+#tooltip p.value span.blk {
+  background-color: #41658f;
+  background-color: rgba(67, 110, 150, .9);
+  color: white;
+}
+
+span.copy-label.light-blue, 
+#tooltip p.value span.interest-ds, 
+#tooltip p.value span.tax-exempt,
+#tooltip p.value span.other {
+  background-color: #a3b7cb;
+  background-color: rgba(161, 183, 203, .8);
+  color: #000;
+}
+
+#tooltip p.value span.wht { background-color: #EAC117; }
+#tooltip p.value span.hisp { background-color: #347235; color: white; }
+
+#tooltip p.value span { display: block; padding: 3px 7px; }
+#tooltip p.value span:first-child { margin-top: 5px; }
+#tooltip span > small, #tooltip span > small { font-size: 14px; font-weight: bold; }
+
+span.copy-label.dotted { border: 1px dotted #333; color: #333; }
+span.copy-label.green { background-color: #A9B9A1; }
+span.copy-label.red { background-color: #D199A3;}
+span.copy-label.trends { background-color: #B29BB2; }
+span.copy-label.adjusted-trends { background-color: #FBBF6A; }
+
+/* scoop and toss styles */
+#scoop1{display:block;} /*Show first panel by default*/
+
+.grfx-subhead { line-height: 1.2em; }
+.grfx-chatter { max-width: 100%; line-height: 1.5em; margin-bottom: 8px; color: #555;}
+.lead.grfx-chatter { margin-bottom: 22px; }
+.chart-label { 
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 5px;
+}
+
+.left-rule{
+  padding-left:30px;
+  margin-left:30px;
+  border-left:1px solid Black;
+}
+
+.shift-right { padding-left: 30px; }
+
+.shift-right img{
+  margin-top:15px;
+  width:98%;
+}
+
+#scoop-credits{
+  margin-top: 0;
+}
+
+.grfx-block article .nav { margin-bottom: 5px; }
+.nav-tabs li {
+  font-size: 13px;
+  text-transform: uppercase;
+  font-family: 'Arial', sans-serif; 
+}
+
+.nav-tabs>.active>a, 
+.nav-tabs>.active>a:hover, 
+.nav-tabs>.active>a:focus {
+  font-weight: bold;
+  color: #333;
+}
+
+.big-media { margin: 40px 0 40px 0; }
+.big-media .big-media-images { position: relative; }
+#big-media-caption { margin-bottom: 0; }
+
+.big-media .big-media-menu {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.ie10 img.gray-thumb {
+  display: none;
+}
+.ie10 .big-media-thumb {
+  opacity: 0.8;
+}
+.ie10 .big-media-thumb:hover,
+.ie10 .big-media-thumb.active {
+  opacity: 1;
+}
+
+.grfx-wrapper {
+  position:relative;
+  margin-top:15px;
+}
+
+.grfx-wrapper div{
+  position:absolute;
+  background-color:#fff;
+  padding:5px;
+}
+
+.grfx-wrapper div p{margin-bottom:0;}
+
+/*position callouts on chart*/
+
+#original{
+  top:31%;
+  right:79%;
+  width:100px;
+}
+
+#new{
+  top:11%;
+  right:5%;
+  width:100px;
+  text-align:right;
+}
+
+#additional{
+  width:100px;
+  right:40%;
+  top:0%;
+  text-align:center;
+  color:red;
+}
+
+#bond-a{
+  position:absolute;
+  top:36%;
+  left:0%;
+}
+
+#bond-b{
+  position:absolute;
+  top:55%;
+  left:0%;
+}
+
+#bond-c{
+  position:absolute;
+  top:71%;
+  left:0%;
+}
+
+#coupon { padding-right: 20px; }
+
+span.box{
+  display:inline-block;
+  font-weight:bold;
+  color:#fff;
+  background-color:#000;
+  width:19px;
+  height:19px;
+  text-align:center;
+  font-family:sans-serif;
+  margin: 0 5px 0 0;
+  text-transform:uppercase;
+}
+
+.bullet {
+  width:19px;
+  height:19px;
+}
+
+.key{
+  width:15px;
+  height:12px;
+}
+
+
+.blue{
+  background-color:blue;
+}
+
+.red{
+  background-color:red;
+}
+
+.big-media .big-media-menu .big-media-menu-wrapper {
+  position: relative;
+}
+.big-media .big-media-thumb:hover { cursor: pointer; }
+.big-media .big-media-thumb { 
+  margin-top: 15px;
+  transform: scale(1.0, 1.0);
+  -webkit-transform: scale(1.0, 1.0);
+  -ms-transform: scale(1.0, 1.0);
+  -moz-backface-visibility:hidden;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+}
+.big-media .big-media-thumb img.gray-thumb {
+  position: absolute;
+  transition-property: all;
+  transition-duration: 0.3s;
+  z-index: 100;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+}
+.big-media .big-media-thumb .gray-thumb:hover,
+.big-media .big-media-thumb.active .gray-thumb
+ { 
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft. Alpha(Opacity=0)";
+}
+
+axis path,
+.x.axis {
+  fill: none;
+}
+
+.y.axis path {
+  display: none;
+}
+
+.axis text {
+  font-family: 'arial', sans-serif;
+  fill: #777;
+  font-size: 12px; 
+}
+
+.y.axis line { 
+  stroke: #000; 
+  stroke-width: 2px;
+  z-index: 1000000;
+}
+.y.axis .minor line { 
+  stroke: #ccc; 
+  stroke-width: 1px;
+}
+
+.y.axis text { visibility: hidden; }
+.y.axis .minor text { visibility: visible; }
+
+.line {
+  fill: none;
+  stroke: #436e96;
+  stroke-width: 6px;
+}
+
+.line.toss { stroke: #8C001A; }
+
+.dot { 
+  fill: #fff;
+  stroke: #000000; 
+}
+
+/* table chart styles */
+#school-age { font-family: 'arial', sans-serif; margin-bottom: 5px; }
+#school-age th {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.6em;
+}
+#school-age td {
+  padding-left: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.6em;
+}
+
+#school-age .bar-col { width: 100%; }
+#school-age .bar { height: 16px }
+#school-age .bar.one { background-color: #C7D4E0; border-left: 2px solid #a1b7cb; }
+#school-age .bar.two { background-color: #7292B0; border-left: 2px solid #144A7C; }
+
+/* area chart styles */
+#principal-cumulative-chart-container .area { fill: #A1B7CB; }
+#principal-cumulative-chart-container path,
+#principal-cumulative-chart-container circle {
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+#principal-cumulative-chart-container .highlight.baseline path.area { opacity: 0 }
+#principal-cumulative-chart-container .highlight.total .baseline { opacity: 0; }
+#principal-cumulative-chart-container .highlight.baseline .total{ opacity: 0; }
+
+/* debt service chart styles */
+#debt-chart-container rect {
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+#debt-chart-container .highlight.interest .interest {
+  stroke: #144A7C;
+  stroke-width: 1px;
+}
+#debt-chart-container .highlight.principal .principal {
+  stroke: #0D3058;
+  stroke-width: 1px;
+}
+#debt-chart-container .highlight.interest .principal { opacity: 0.35; }
+#debt-chart-container .highlight.principal .interest { opacity: 0.65; }
+
+/* cps go chart styles */
+#cps-go-chart path,
+#cps-go-chart circle {
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+#cps-go-chart .highlight.baseline path.area { opacity: 0 }
+#cps-go-chart .highlight.total .baseline { opacity: 0; }
+#cps-go-chart .highlight.baseline .total{ opacity: 0; }
+
+/* Spending chart/table for smaller screens */
+#spending-chart-container li span.circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+  margin: 5px 5px 0 0;
+  vertical-align: middle;
+}
+#spending-chart-container li span.refunding {
+  background-color: #537343;
+  border: 2px solid #537343;
+}
+#spending-chart-container li span.capital-projects {
+  background-color: #A33348;
+  border: 2px solid #A33348; 
+}
+#spending-chart-container li span.short-term {
+  background-color: #436E96;
+  border: 2px solid #436E96; 
+}
+#spending-chart-container li span.total-spending {
+  background-color: rgba(0, 0, 0, .01);
+  border: 2px dotted #000000; 
+}
+#spending-chart-container ul,
+#debt-comparison-container ul {
+  margin: 0;
+  padding: 0;
+}
+#spending-chart-container li,
+#debt-comparison-container li {
+  list-style-type: none;
+  margin: 8px 0 0 0;
+  padding: 0;
+  width: 100%;
+  float: left;
+  text-shadow: 0px 1px 1px white;
+}
+#spending-chart-container li span {
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  display: block;
+  float: left;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: sans-serif;
+  line-height: 26px;
+  position: relative;
+}
+#debt-comparison-container li span {
+  margin: 0;
+  padding: 0;
+  width: 33%;
+  display: block;
+  float: left;
+  font-family: sans-serif;
+  position: relative;
+}
+#debt-comparison-container li span.labels {
+  color: #999;
+}
+#spending-chart-container li span.name,
+#spending-chart-container li span.val {
+  border-bottom: 1px solid #aaa;
+  padding: 6px 0;
+}
+#debt-comparison-container li.taxable-debt-issued {
+  border-bottom: 1px solid #aaa;
+  padding: 0 0 10px 0;
+}
+#spending-chart-container ul li.short-term ul li {
+  margin: 0;
+  padding: 5px 0 0 0;
+}
+#spending-chart-container ul li.short-term ul li span,
+#debt-comparison-container li.taxable-debt-issued span {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+}
+#debt-comparison-container span.taxable-debt,
+#debt-comparison-container span.per-capita-title {
+  display: none;
+}
+
+#spending-chart-container ul li.short-term ul li span.circle {
+  display: none;
+}
+#spending-chart-container ul li.short-term ul li span.name {
+  margin-left: 5%;
+  width: 45%;
+  text-indent: 5px;
+}
+#spending-chart-container ul li.short-term ul li span.name,
+#spending-chart-container ul li.short-term ul li span.val {
+  border-bottom: 1px dashed #999;
+  padding: 4px 0;
+}
+#debt-comparison-container li span.issuer {
+  font-weight: bold;
+}
+
+#debt-comparison-container li.taxable-debt-issued:last-child { border-bottom: none; }
+#debt-comparison-container li span.bar {
+  position: absolute;
+  background-color: rgba(67, 110, 150, .33);
+  height: 22px;
+  border-left: 1px solid rgba(67, 110, 150, 1);
+  z-index: -1;
+  top: 0;
+  bottom: 2px;
+}
+#spending-chart-container ul li span.val,
+#debt-comparison-container li.taxable-debt-issued span.val {
+  text-indent: 8px;
+}
+#spending-chart-container ul li span.bar {
+  position: absolute;
+  background-color: rgba(0, 0, 0, .1);
+  border-left: 1px solid rgba(0, 0, 0, .25);
+  z-index: -1;
+  top: 0;
+  bottom: 4px;
+}
+#spending-chart-container ul li.short-term > span span.bar,
+#debt-comparison-container li span.bar.chicago {
+  background-color: rgba(67, 110, 150, .7);
+  border-left: 1px solid rgba(67, 110, 150, 1);
+}
+#spending-chart-container ul li.short-term ul li span.bar {
+  background-color: rgba(67, 110, 150, .33);
+  height: 24px;
+  border-left: 1px solid rgba(67, 110, 150, 1);
+}
+#spending-chart-container ul li.capital-projects > span span.bar {
+  background-color: rgba(163, 51, 72, .25);
+  border-left: 1px solid rgba(163, 51, 72, 1);
+}
+#spending-chart-container ul li.refunding > span.name,
+#spending-chart-container ul li.refunding > span.val {
+  border-bottom: none;
+}
+#spending-chart-container ul li.refunding > span span.bar {
+  background-color: rgba(83, 115, 67, .25);
+  border-left: 1px solid rgba(83, 115, 67, 1);
+}
+.chart-source {
+  clear: both;
+  margin-bottom: 6px;
+}
+
+#spending-chart-container li {
+  transform: scale(1.0, 1.0);
+  -webkit-transform: scale(1.0, 1.0);
+  -ms-transform: scale(1.0, 1.0);
+  -moz-backface-visibility:hidden;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+#spending-chart-container.highlight.shortterm .refunding,
+#spending-chart-container.highlight.shortterm .capital-projects {
+  opacity: 0.4;
+}
+#spending-chart-container.highlight.capital .refunding,
+#spending-chart-container.highlight.capital .short-term {
+  opacity: 0.4;
+}
+#spending-chart-container.highlight.moneysaving .capital-projects,
+#spending-chart-container.highlight.moneysaving .short-term {
+  opacity: 0.4;
+}
+
+/* go chart container styles */
+#go-chart-container rect {
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+#go-chart-container .highlight.taxexempt .taxexempt {
+  stroke: #144A7C;
+  stroke-width: 1px;
+}
+#go-chart-container .highlight.taxable .taxable {
+  stroke: #0D3058;
+  stroke-width: 1px;
+}
+#go-chart-container .highlight.taxexempt .taxable { opacity: 0.35; }
+#go-chart-container .highlight.taxable .taxexempt { opacity: 0.65; }
+
+/* enrollment chart sytles*/
+#cps-gsa-chart rect, #percapita-chart-container rect {
+  transition-property: all;
+  transition-duration: 0.3s;
+  fill: #A1B7CB;
+}
+
+#cps-gsa-chart rect:hover, #percapita-chart-container rect:hover, #births-chart rect:hover { fill: #698bab; }
+
+#cps-gsa-chart .highlight {
+  fill: #436e96;
+  stroke-width: 1px;
+}
+
+/* births chart styles */
+nav ul.categories { margin: 0 0 15px 0; }
+
+nav ul.categories li { 
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  cursor: pointer; 
+  font-family: 'arial', sans-serif;
+  font-size: 14px;
+}
+
+nav ul.categories li.active,
+nav ul.categories li:hover { 
+  background-color: #567CA0; 
+  color: white; 
+} 
+nav ul.categories li:hover { cursor: default; }
+
+#births-chart rect.race:hover { fill: #436E96; stroke-width: 1px; stroke: #000000;}
+
+/* projections chart */
+#projection-chart path.trend { stroke-width: 3px; stroke: #B29BB2; }
+#projection-chart path.adjusted { stroke-width: 3px; stroke: #FBBF6A; }
+
+#projection-chart path,
+#projection-chart circle {
+  transition-property: all;
+  transition-duration: 0.3s;
+}
+
+#projection-chart .highlight.trends .adjusted { opacity: 0.1; }
+#projection-chart .highlight.trends .enrollment { opacity: 0.1; }
+#projection-chart .highlight.trends .baseline { opacity: 0; }
+#projection-chart .highlight.adjusted .trend { opacity: 0.1; }
+#projection-chart .highlight.adjusted .enrollment { opacity: 0.1; }
+#projection-chart .highlight.adjusted .baseline { opacity: 0; }
+#projection-chart .highlight.actual .adjusted { opacity: 0.1; }
+#projection-chart .highlight.actual .trend { opacity: 0.1; }
+
+/* block quote */
+div.trib-media > aside > blockquote > h4 { 
+  margin-bottom: 10px;
+  font-size: 1.8em;
+  line-height: 1.4em;
+}
+
+div.trib-media > aside p { width: 100%; }
+
+div.trib-media > aside > h3 + p { margin-bottom: 7px; }
+
+span.story-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: #333;
+  display: inline-block;
+  margin-right: 6px;
+  margin-bottom: 2px;
+}
+
+.refer { 
+  border: 1px solid #436e96;
+  padding: 5px;
+}
+
+.refer h3 {
+  line-height: 1.4em;
+  margin-bottom: 0;
+}
+
+.refer p.lead { margin-bottom: 5px; }
+
+/* statements page */
+
+#daley { margin-bottom: 30px; }
+#daley h2, #city h2 { max-width: 1200px; line-height: 1.4em; }
+.statements blockquote h4 { line-height: 1.7em; }
+.statements blockquote h4:first-child { margin-top: 0; }
+
+p.quote-title {
+  line-height: 20px;
+  color: #999; 
+  margin-top: 10px;
+}
+
+/* previous/next story nav*/
+
+.prev-next { 
+  height: 70px;
+  margin-top: 30px;
+  position: relative; 
+}
+
+.prev-next a:hover { text-decoration: none; }
+
+.prev-next .prev-inner,
+.prev-next .next-inner {
+  width: 50%;
+  position: absolute;
+}
+
+.prev-next .prev-inner:hover ,
+.prev-next .next-inner:hover {
+  background-color: #eee;
+}
+
+.prev-inner { left: 0; }
+.next-inner { right: 0;}
+
+.prev-next .previous {
+  padding: 10px 0 10px 55px;
+}
+
+.prev-next .next {
+  padding: 10px 55px 10px 0;
+}
+
+.prev-next h3 {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+.prev-next small {
+  display: block;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  color: #144A7C;
+}
+
+.prev-next i { 
+  position: absolute;
+  font-size: 45px; 
+  top: 13px;
+}
+
+.prev-next .previous i {
+  left: 7px;
+}
+
+.prev-next .next i {
+  right: 7px;
+}
+
+div#content #story-pages-nav-container {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 40px 0;
+  max-width: none;
+  z-index: 999;
+}
+#story-pages-nav-container a {
+  display: block;
+}
+#story-pages-nav-container a i {
+  color: #333;
+}
+#story-pages-nav-container .page-footer {
+  margin-bottom: 0;
+  clear: both;
+}
+
+/* tooltip styles */
+#tooltip {
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, .8);
+  border: 1px solid #777;
+  pointer-events: none;
+  font-family: 'arial', sans-serif; 
+  font-size: 14px; 
+}
+
+#tooltip p:first-child { margin: 0 0 3px; }
+#tooltip p { margin: 0; }
+#tooltip .bold{ font-weight: bold; }
+
+/* Spinner */
+#spinner { height: 100px; }
+
+@media all and (max-width: 1230px) {
+  #cps-bonds.backdrop h1 { font-size: 68px;}
+}
+
+@media all and (max-width: 1150px) {
+  #projects-bonds.backdrop h1 { font-size: 65px; }
+  #cps-bonds.backdrop h1 { font-size: 64px; }
+}
+
+/* Responsive rule */
+@media all and (max-width: 1065px) {
+  .ct-article p.grfx-chatter { width: 100%; } 
+  #cps-bonds.backdrop h1 { font-size: 60px; }
+}
+
+@media all and (max-width: 1000px) {
+  body.has-nav {
+    padding-top: 0;
+  }
+  .navbar-fixed-top {
+    margin-bottom: 0;
+  }
+  .nav-project-title {
+    float: right;
+    margin-right: 10px;
+  }
+  .about-content { padding-top: 0px; }
+  #projects-bonds.backdrop h1 { font-size: 62px; }
+  #cps-bonds.backdrop h1 { font-size: 56px; }
+}
+
+@media all and (max-width: 940px) {
+  #social-menu {
+    float: left;
+  }
+  #projects-bonds.backdrop h1 { font-size: 50dspx; }
+  .video-wrapper.large-video { padding-bottom: 52.9%; }
+}
+
+@media all and (max-width: 930px) {
+  #taxable-bonds .title-wrapper h1 {
+    font-size: 74px;
+  }
+}
+
+@media all and (max-width: 814px) {
+  #taxable-bonds .title-wrapper h1 {
+    font-size: 68px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  section h1 {
+    font-size: 45px !important;
+    line-height: 1.4em;
+    margin-top: 15px;
+  }
+  #grfx h1 { margin: 5px 0; }
+  h2 { line-height: 1.2em; }
+  .grfx-block { margin-bottom: 30px; }
+  .backdrop h1 { 
+    bottom: 7%;
+    font-size: 52px !important;
+    line-height: 1.3em; 
+  }
+  .backdrop h2 {
+    bottom: .5%;
+    font-size: 24px !important;
+    line-height: 1.2;
+    max-width: 85%;
+  }
+  .section-head { line-height: 1.3em; }
+  div#credits {
+    padding-left: 0;
+    max-width: 100%;
+  }
+  .backdrop { margin-left: -20px; margin-right: -20px; }
+  .trib-media blockquote { margin-bottom: 0; }
+  .ct-article blockquote p { width: 100%; }
+  .ct-article p { width: 85%; }
+  #sections section .span4.advert-wrapper .advert {
+    margin-top: 20px;
+  }
+  .statements { margin-top: 20px; }
+
+  .video-wrapper.large-video { padding-bottom: 52.2%; }
+
+}
+
+@media all and (max-width: 500px) {
+  .backdrop h1 {
+    bottom: 6%;
+    padding: 0 0 10px 0;
+    font-size: 35px !important;
+    line-height: 1em;
+  }
+  .backdrop h2 {
+    padding: 0;
+    bottom: 1%; 
+    font-size: 20px !important; 
+  }
+  section h1 { 
+    font-size: 35px !important;
+    line-height: 1.4em;
+    margin-bottom: 10px;
+  }
+  .grfx-block { margin-bottom: 10px; }
+  #grfx .grfx-block { margin-bottom: 30px; }
+
+.axis text { font-size: 11px; }
+
+  .ct-article p {
+    width: 100%;
+  }
+  .trib-media { width: 99%; }
+  .trib-media, .trib-media blockquote { margin: 0; }
+  .trib-media figure { margin-bottom: 15px; }
+  .trib-media figcaption { font-size: 13px; }
+  #daley h2, #city h2 { line-height: 1.4em; }
+  #debt-comparison-container li li span { border: none; padding: 0; width: 50%;}
+  #debt-comparison-container li.taxable-debt-issued ul li span.per-capita-title,
+  #debt-comparison-container li.taxable-debt-issued ul li span.taxable-debt {
+    display: block;
+    width: 50%;
+    border-bottom: none;
+    color: #999;
+    font-size: 12px;
+    padding: 0;
+  }
+  #debt-comparison-container li.taxable-debt-issued span.issuer {
+    width: 100%;
+    font-weight: bold;
+    padding: 0 0 6px 0;
+  }
+  #debt-comparison-container li.taxable-debt-issued:first-child { margin-top: 0; }
+  #debt-comparison-container li span.labels {
+    display: none;
+  }
+  #debt-comparison-container li.taxable-debt-issued span.per-capita_bonds,
+  #debt-comparison-container li.taxable-debt-issued span.total-debt{
+    width: 50%;
+    padding:2px 0 4px;
+    border-bottom: none;
+    display: block;
+  }
+   #debt-comparison-container li.taxable-debt-issued span.per-capita-title,
+  #debt-comparison-container li.taxable-debt-issued span.taxable-debt {
+    display: block;
+    font-size: 12px;
+    color: #999;
+  }
+
+  .trib-media > aside > h3 {
+    font-size: 1.5em;
+    line-height: 1.2em;
+  }
+  .trib-media > aside > h3 + p {
+    font-size: 1.2em;
+    line-height: 1.7em;
+  }
+  .video-wrapper.large-video { padding-bottom: 49.7%; }
+
+  .prev-next { height: inherit; }
+  .prev-next .prev-inner,
+  .prev-next .next-inner {
+    width: 100%;
+    position: relative;
+    text-align:left;
+  }
+
+  .prev-next .next {
+    padding: 10px 55px 10px 55px;
+  }
+
+  .prev-next .next small, .prev-next .next h3 { text-align: left; }
+
+  #modern-schools img + figcaption { margin-bottom: 5px; }
+  #modern-schools figcaption.media-credit { margin-bottom: 10px; margin-top: 5px;}
+
+}
+
+@media (min-width: 579px) {
+  .sticky-nav-hidden-phone { display: block; }
+  .sticky-nav-visible-phone { display: none;}
+}
+
+@media (max-width: 579px) {
+  .sticky-nav-hidden-phone { display: none; }
+  .sticky-nav-visible-phone { display: block;}
+  #sticky-nav-container ul li {
+    border-left: none;
+    display: block;
+    max-width: 100%;
+    width: inherit;
+    border-bottom: 1px solid #ccc;
+    margin-right: 0;
+  }
+  #sticky-nav-container ul li:first-child {
+    border-top: 1px solid #ccc;
+  }
+  .sticky-wrapper {
+    margin-bottom: 0;
+  }
+  #sticky-nav-container ul > li h4 {
+    font-size: 14px;
+  }
+  #sticky-nav-container ul li > a.active h4 {
+    color: #0d1123;
+  }
+}
+
+@media (max-width: 480px) {
+  div#content .container-fluid .container-fluid-inner h2 { line-height: 1.4em; }
+}
+
+@media (max-width: 360px) {
+  section h1 {
+    line-height: 1.2em;
+  }
+  .link-below.drop-cap:first-letter {
+     margin-right: 5px;
+   }
+  .advert,
+   #sections section .span4.advert-wrapper .advert {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  #spending-chart-container li span,
+  #debt-comparison-container li span{
+    font-size: 11px;
+  }
+  #spending-chart-container ul li.short-term ul li span,
+  #debt-comparison-container ul li ul li span {
+    font-size: 11px;
+    line-height: 20px;
+  }
+  #spending-chart-container span.name {
+    width: 60%;
+  }
+  #spending-chart-container span.val {
+    width: 40%;
+  }
+  #spending-chart-container ul li.short-term ul li span.name {
+    margin-left: 0;
+    width: 60%;
+  }
+  #spending-chart-container li span.circle {
+    width: 5px;
+    height: 5px;
+    margin: 8px 4px 0 0;
+  }
+  #debt-comparison-container ul li ul li span.name {
+    margin-left: 0;
+    width: 33%;
+  }
+  .dot { display: none; }
+  .video-wrapper.large-video { padding-bottom: 46.7%; }
+  #cps-bonds.backdrop h1 { font-size: 30px !important;  }
+}
+
+@media (max-width: 325px) {
+  .video-wrapper.large-video { padding-bottom: 45.3%; }
+}

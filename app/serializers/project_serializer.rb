@@ -1,8 +1,12 @@
 class ProjectSerializer < ActiveModel::Serializer
-  attributes :title, :notes, :dom_id, :id
+  attributes :title, :notes, :reflections, :dom_id, :id
 
   def dom_id
     dom_id_manager.dom_id object
+  end
+
+  def reflections
+    object.reflect
   end
 
   private
