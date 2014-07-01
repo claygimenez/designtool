@@ -10,7 +10,11 @@ class Project < ActiveRecord::Base
     frequencies = Hash.new(0)
     self.notes.each do |note|
       notewords = note.text.split(" ")
-      notewords.each { |noteword| frequencies[noteword] += 1 }
+      notewords.each do |noteword|
+        unless !!(noteword =~ /\b(is|it|for|this|that|with|in|have|was|the|and|i|on|are|of|my|but|can|you|a|from|to|as|not|be|like|very|had|one|so|or|has|really|many|just|all|would|if|than|more|at|no|because)\b/i)
+          frequencies[noteword] += 1
+        end
+      end
     end
 
     frequencies = frequencies.sort_by {|k,v| v}

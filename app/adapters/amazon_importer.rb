@@ -24,9 +24,9 @@ class AmazonImporter
         @html = review_html
         @div = review_html.next_element.next_element
 
-        @note = @project.Note.new
+        @note = @project.notes.new
 
-        @note.text ||= @div.css(".reviewText").first.content.strip #sub(/\A[\n\t\s]+/,"").sub(/[\n\t\s]+\Z/,"")
+        @note.text = @div.css(".reviewText").first.content.strip
 
         @note.save
 
