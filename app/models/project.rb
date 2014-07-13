@@ -1,4 +1,6 @@
 class Project < ActiveRecord::Base
+  require 'treat'
+
   belongs_to :user
   has_many :notes
 
@@ -7,17 +9,29 @@ class Project < ActiveRecord::Base
   end
 
   def reflect
+    insights = Hash.new
+    notewords = []
     frequencies = Hash.new(0)
+
     self.notes.each do |note|
-      notewords = note.text.split(" ")
-      notewords.each { |noteword| frequencies[noteword] += 1 }
+      # insights[note.id] = {:raw => note.text}
+      scrubNote = note.text.to_entity
+      insights[note.id] = {:treatobj => scrubNote}
+      scrubNote.do(:chunk, :segment, :tokenize, :parse)
+      scrubWords = []
+      scrubNote.words.each { |word| scrubWords.push(word.to_s) }
+      insights[note.id]['words'] = scrubWords
+      notewords.concat(scrubWords)
     end
+
+    notewords.each { |noteword| frequencies[noteword] += 1 }
 
     frequencies = frequencies.sort_by {|k,v| v}
     frequencies.reverse!
 
     reflections = []
     unless frequencies.blank?
+      # reflections.push('hi')
       10.times do |w|
         word = frequencies[w][0]
         value = frequencies[w][1]
