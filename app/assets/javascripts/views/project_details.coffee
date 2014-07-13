@@ -8,8 +8,10 @@ class @Designtool.Views.ProjectDetail extends Support.CompositeView
   render: ->
     console.log 'render'
     @$el.template 'projects/detail'
-    console.log @model
-    console.log @model.title()
+    console.log 'model title', @model.title()
+    console.log @model instanceof Backbone.Model
+    console.log @model.get('title')
+    console.log @model.attributes
 
     @$el.find('.title').text(@model.title())
     # @$el.find('.reflections').text(@model.reflections())
