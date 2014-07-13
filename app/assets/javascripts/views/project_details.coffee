@@ -8,6 +8,9 @@ class @Designtool.Views.ProjectDetail extends Support.CompositeView
   render: ->
     console.log 'render'
     @$el.template 'projects/detail'
+    console.log @model
+    console.log @model.title()
+
     @$el.find('.title').text(@model.title())
     # @$el.find('.reflections').text(@model.reflections())
 

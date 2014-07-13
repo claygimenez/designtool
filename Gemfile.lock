@@ -1,6 +1,9 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    RubyInline (3.12.3)
+      ZenTest (~> 4.3)
+    ZenTest (4.10.1)
     actionmailer (4.0.0)
       actionpack (= 4.0.0)
       mail (~> 2.5.3)
@@ -38,8 +41,11 @@ GEM
     better_errors (0.9.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
+    bind-it (0.2.7)
+      rjb (~> 1.4.3)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    birch (0.0.8)
     bourbon (3.1.8)
       sass (>= 3.2.0)
       thor
@@ -53,6 +59,7 @@ GEM
     capybara-webkit (1.0.0)
       capybara (~> 2.0, >= 2.0.2)
       json
+    chronic (0.10.2)
     clearance (1.0.1)
       bcrypt-ruby
       email_validator (~> 1.4)
@@ -69,6 +76,7 @@ GEM
       safe_yaml (~> 0.9.0)
     database_cleaner (1.1.1)
     debug_inspector (0.0.2)
+    decisiontree (0.4.0)
     delayed_job (4.0.0)
       activesupport (>= 3.0, < 4.1)
     delayed_job_active_record (4.0.0)
@@ -79,6 +87,7 @@ GEM
     ejs (1.1.1)
     email_validator (1.4.0)
       activemodel
+    engtagger (0.2.0)
     erubis (2.7.0)
     execjs (2.0.1)
     factory_girl (4.2.0)
@@ -86,10 +95,17 @@ GEM
     factory_girl_rails (4.2.1)
       factory_girl (~> 4.2.0)
       railties (>= 3.0.0)
+    fastimage (1.6.3)
+      addressable (~> 2.3, >= 2.3.5)
+    ffi (1.1.5)
     flutie (2.0.0)
     foreman (0.63.0)
       dotenv (>= 0.7)
       thor (>= 0.13.6)
+    fuzzy-string-match (0.9.6)
+      RubyInline (>= 3.8.6)
+      RubyInline (>= 3.8.6)
+    graphr (0.2.1)
     high_voltage (1.2.4)
     hike (1.2.3)
     i18n (0.6.5)
@@ -100,11 +116,20 @@ GEM
       rails (>= 3.2)
     json (1.8.0)
     kgio (2.8.0)
+    kronic (1.1.3)
     launchy (2.3.0)
       addressable (~> 2.3)
+    levenshtein-ffi (1.0.3)
+      ffi
+      ffi (~> 1.1.5)
+    liblinear-ruby-swig (0.2.1)
+    linguistics (2.0.3)
+      loggability (~> 0.7)
+    loggability (0.11.0)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    method_source (0.8.2)
     mime-types (1.24)
     mini_portile (0.5.1)
     minitest (4.7.5)
@@ -113,10 +138,20 @@ GEM
       bourbon (>= 2.1)
       sass (>= 3.2)
     newrelic_rpm (3.6.6.147)
+    nickel (0.1.5)
     nokogiri (1.6.0)
       mini_portile (~> 0.5.0)
+    open-nlp (0.1.5)
+      bind-it (~> 0.2.5)
     pg (0.16.0)
     polyglot (0.3.3)
+    progressbar (0.21.0)
+    pry (0.9.12.6)
+      coderay (~> 1.0)
+      method_source (~> 0.8)
+      slop (~> 3.4)
+    punkt-segmenter (0.9.1)
+      unicode_utils (>= 1.0.0)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -141,8 +176,11 @@ GEM
       thor (>= 0.18.1, < 2.0)
     raindrops (0.11.0)
     rake (10.1.0)
+    rb-libsvm (1.1.5)
+    rbtagger (0.4.7)
     recipient_interceptor (0.1.2)
       mail
+    rjb (1.4.9)
     rspec-core (2.14.5)
     rspec-expectations (2.14.2)
       diff-lcs (>= 1.1.3, < 2.0)
@@ -154,12 +192,20 @@ GEM
       rspec-core (~> 2.14.0)
       rspec-expectations (~> 2.14.0)
       rspec-mocks (~> 2.14.0)
+    ruby-fann (1.2.6)
+    ruby-stemmer (0.9.3)
+    rubyzip (0.9.9)
+    rwordnet (0.1.3)
     safe_yaml (0.9.5)
     sass (3.2.10)
     sass-rails (4.0.0)
       railties (>= 4.0.0.beta, < 5.0)
       sass (>= 3.1.10)
       sprockets-rails (~> 2.0.0)
+    scalpel (0.2.1)
+    schiphol (1.0.1)
+      progressbar (>= 0.10.0)
+      rubyzip (~> 0.9.9)
     shoulda-matchers (2.3.0)
       activesupport (>= 3.0.0)
     simple_form (1.4.1)
@@ -167,6 +213,7 @@ GEM
       multi_json (~> 1.0)
       simplecov-html (~> 0.7.1)
     simplecov-html (0.7.1)
+    slop (3.5.0)
     sprockets (2.10.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -176,21 +223,34 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
+    srx-english (0.1.2)
+      term-ansicolor (~> 1.0.5)
+    stanford-core-nlp (0.5.1)
+      bind-it (~> 0.2.5)
+    tactful_tokenizer (0.0.5)
+    term-ansicolor (1.0.7)
+    tf-idf-similarity (0.1.3)
     thor (0.18.1)
     thread_safe (0.1.2)
       atomic
     tilt (1.4.1)
     timecop (0.6.3)
+    treat (2.0.9)
+      birch
+      schiphol
+      yomu
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
     turbolinks (1.3.0)
       coffee-rails
     tzinfo (0.3.37)
+    uea-stemmer (0.10.1)
     uglifier (2.2.0)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
     underscore-rails (1.5.2)
+    unicode_utils (1.4.0)
     unicorn (4.6.3)
       kgio (~> 2.6)
       rack
@@ -198,48 +258,82 @@ GEM
     webmock (1.13.0)
       addressable (>= 2.2.7)
       crack (>= 0.3.2)
+    whatlanguage (1.0.5)
     xpath (2.0.0)
       nokogiri (~> 1.3)
+    yomu (0.2.0)
+      json (~> 1.8)
+      mime-types (~> 1.23)
+    zip (2.0.2)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   active_model_serializers
+  activesupport
   airbrake
   backbone-support
   better_errors
   binding_of_caller
   bourbon
   capybara-webkit (>= 0.14.1)
+  chronic
   clearance
   coffee-rails
   database_cleaner
+  decisiontree
   delayed_job_active_record (>= 4.0.0.beta2)
   ejs
   email_validator
+  engtagger
   factory_girl_rails
+  fastimage
   flutie
   foreman
+  fuzzy-string-match
+  graphr
   high_voltage
   jquery-rails
   js-routes
+  kronic
   launchy
+  levenshtein-ffi
+  liblinear-ruby-swig
+  linguistics
   neat
   newrelic_rpm (>= 3.5.7)
+  nickel
+  open-nlp
   pg
+  pry
+  punkt-segmenter
   rack-timeout
   rails (= 4.0.0)
   rails_12factor
+  rb-libsvm
+  rbtagger
   recipient_interceptor
   rspec-rails (>= 2.14)
+  ruby-fann
+  ruby-stemmer
+  rwordnet
   sass-rails
+  scalpel
   shoulda-matchers
   simple_form
   simplecov
+  srx-english
+  stanford-core-nlp
+  tactful_tokenizer
+  tf-idf-similarity
   timecop
+  treat
   turbolinks
+  uea-stemmer
   uglifier
   underscore-rails
   unicorn
   webmock
+  whatlanguage
+  zip
