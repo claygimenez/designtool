@@ -8,12 +8,11 @@ class ProjectsController < ApplicationController
   end
 
   def index
-    @projects = Project.all
+    @projects = Project.all.limit(3)
   end
 
   def show
-    @project = Project.find(params[:id])
-    @notes = @project.notes
+    @projects = Project.find(params[:id])
   end
 
   private

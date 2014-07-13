@@ -13,8 +13,8 @@ class @Designtool.Models.Project extends Backbone.Model
   words: ->
     Object.keys(@reflections())
 
-  projectId: ->
-    @get('id')
+  # projectId: ->
+    # @get('id')
 
   domId: ->
     @get('dom_id')
