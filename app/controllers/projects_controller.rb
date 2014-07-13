@@ -9,10 +9,12 @@ class ProjectsController < ApplicationController
 
   def index
     @projects = Project.all.limit(3)
+    respond_with @projects
   end
 
   def show
     @projects = Project.find(params[:id])
+    respond_with @projects, root: false
   end
 
   private
