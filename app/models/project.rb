@@ -18,6 +18,10 @@ class Project < ActiveRecord::Base
       scrubNote = note.text.to_entity
       insights[note.id] = {:treatobj => scrubNote}
       scrubNote.do(:chunk, :segment, :tokenize, :parse)
+      # scrubNote.do(:chunk)
+      # scrubNote.segment:stanford
+      # scrubNote.sentences.each { |sentence| sentence.tokenize:stanford }
+      # scrubNote.sentences.parse:stanford
       scrubWords = []
       scrubNote.words.each { |word| scrubWords.push(word.to_s) }
       insights[note.id]['words'] = scrubWords
