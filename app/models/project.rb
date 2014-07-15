@@ -1,6 +1,4 @@
 class Project < ActiveRecord::Base
-  require 'treat'
-
   belongs_to :user
   has_many :notes
 
@@ -9,23 +7,12 @@ class Project < ActiveRecord::Base
   end
 
   def reflect
-    insights = Hash.new
     notewords = []
     frequencies = Hash.new(0)
 
     self.notes.each do |note|
-      # insights[note.id] = {:raw => note.text}
-      scrubNote = note.text.to_entity
-      insights[note.id] = {:treatobj => scrubNote}
-      scrubNote.do(:chunk, :segment, :tokenize, :parse)
-      # scrubNote.do(:chunk)
-      # scrubNote.segment:stanford
-      # scrubNote.sentences.each { |sentence| sentence.tokenize:stanford }
-      # scrubNote.sentences.parse:stanford
-      scrubWords = []
-      scrubNote.words.each { |word| scrubWords.push(word.to_s) }
-      insights[note.id]['words'] = scrubWords
-      notewords.concat(scrubWords)
+      # notewords.concat(note.scrubbed_notes['words'])
+      notewords.concat(note.scrubbed_notes)
     end
 
     notewords.each { |noteword| frequencies[noteword] += 1 }
@@ -45,7 +32,7 @@ class Project < ActiveRecord::Base
 
     reflections
 
-    # Spoof Data
+    # Example Data Format For Visualization
     # # [ {:word => "lets", :value => 10},
     #   {:word => "see", :value => 7},
     #   {:word => "if", :value => 3},
