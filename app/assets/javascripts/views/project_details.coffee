@@ -8,8 +8,11 @@ class @Designtool.Views.ProjectDetail extends Support.CompositeView
   render: ->
     @$el.template 'projects/detail'
     @$el.find('.title').text(@model.title())
-    @$el.find('.reflections').text(@model.reflections())
+    @$el.find('.reflections').text(@model.tfidf())
 
+    console.log 'model', @model
+    console.log 'clusters', @model.clusters()
+    new Designtool.Views.Circles(model: @model).render()
     new Designtool.Views.BasicBar(model: @model).render()
 
     # obli_chart = new ObligationDebtChartView(

@@ -13,6 +13,12 @@ class @Designtool.Models.Project extends Backbone.Model
   words: ->
     Object.keys(@reflections())
 
+  tfidf: ->
+    @get('tfidf')
+
+  clusters: ->
+    @get('clusters')
+
   projectId: ->
     @get('id')
 

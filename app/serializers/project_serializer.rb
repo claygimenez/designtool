@@ -1,5 +1,5 @@
 class ProjectSerializer < ActiveModel::Serializer
-  attributes :title, :notes, :reflections, :dom_id, :id
+  attributes :title, :notes, :reflections, :tfidf, :clusters, :dom_id, :id
 
   def dom_id
     dom_id_manager.dom_id object
@@ -7,6 +7,14 @@ class ProjectSerializer < ActiveModel::Serializer
 
   def reflections
     object.reflect
+  end
+
+  def tfidf
+    object.kmeans(object.tfidf_matrix(object.term_list))
+  end
+
+  def clusters
+    object.labeled_kmeans
   end
 
   private
