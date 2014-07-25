@@ -10,11 +10,11 @@ class ProjectSerializer < ActiveModel::Serializer
   end
 
   def tfidf
-    object.kmeans(object.tfidf_matrix(object.term_list))
+    # object.kmeans(object.tfidf_matrix(object.term_list))
   end
 
   def clusters
-    object.labeled_kmeans
+    object.clusters
   end
 
   private

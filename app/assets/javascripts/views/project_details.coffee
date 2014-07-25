@@ -8,7 +8,7 @@ class @Designtool.Views.ProjectDetail extends Support.CompositeView
   render: ->
     @$el.template 'projects/detail'
     @$el.find('.title').text(@model.title())
-    @$el.find('.reflections').text(@model.tfidf())
+    @$el.find('.reflections').text("Hi!")
 
     console.log 'model', @model
     console.log 'clusters', @model.clusters()
