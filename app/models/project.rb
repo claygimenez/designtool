@@ -319,12 +319,12 @@ class Project < ActiveRecord::Base
         val,i = seed.each_with_index.max
         seed[i] = 0
         word = terms[i]
-        labels[:children][index][:children].push({:name => word, :value => val})
+        labels[:children][index][:children].push({:name => word, :value => val**4})
       end
     end
 
     labels
 
   end
-  
+
 end

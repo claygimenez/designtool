@@ -3,7 +3,7 @@ class @Designtool.Views.Circles extends Support.CompositeView
     root = @model.clusters()
 
     diameter = 960
-    format = d3.format(",d")
+    format = d3.format("g")
 
     pack = d3.layout.pack()
       .size([
@@ -11,7 +11,7 @@ class @Designtool.Views.Circles extends Support.CompositeView
         diameter - 4
       ]).value((d) ->
         d.value
-      )
+      ).padding(5)
 
     svg = d3.select(".circles").append("svg")
       .attr("width", diameter)
@@ -29,7 +29,7 @@ class @Designtool.Views.Circles extends Support.CompositeView
       )
 
     node.append("title").text( (d) ->
-      d.name + ((if d.children then "" else ": " + format(d.size)))
+      d.name + ((if d.children then "" else ": " + format(Math.pow(d.value, 1/4))))
     )
 
     node.append("circle").attr("r", (d) ->
